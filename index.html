@@ -1,9 +1,22 @@
 <html>
   <head>
-    <meta charset="utf-8"
-    <link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Nicolás Crespo">
+    <link rel="stylesheet" href="page.css">
+    <style>
+body {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  color: #FFFFFF;
+}
+</style>
   </head>
   <body>
+    <header>
+      <img src="img/logo.jpg" alt="Mirtha's Marvels" style=width:150px;height:150px;>
+    </header>
     <h1>
       Madame Mirtha's Marvels
     </h1>
@@ -16,24 +29,35 @@
       <a href="contact.html"><li>Contact us</li></a>
       </aside>
       </ul>
+
       <hr>
       <h3>The life cursed amulet</h3>
       <section>
-
-
       <img src="img/scp963.jpg" alt="The Cursed Amulet" style="width:500px;height:600px;">
-      <p>This amulet will give eternal life to the first person to wear it, and will erase the consiousness of everyone thereafter, it remains unknown if it's been yet worn <br>
+      <p>This amulet will give <span style="color:red">eternal life</span> to the first person to wear it, and will erase the consciousness of everyone thereafter, it remains unknown if it's been yet worn <br>
       <b>Price: $2000</b></p>
-      <button onclick="addtocart()" type="button">Purchase</button>
+      <button onclick="taketo963()" type="button">Purchase</button>
+      </section>
+      <hr>
+      <h3>The slime</h3>
+      <section>
+      <img src="img/scp447.jpg" alt="The slime" style="width:500px;height:600px;">
+      <p>The slimy substance contained within the flask will ██████ ███ ██ ███████<span style="color:orange">████████ ███ ███████████ █████</span>███████ ██ █████████ immediately upon making contact with a corpse. Extreme caution is advised.<br>
+      <b>Price: $200 per oz</b></p>
+      <button onclick="taketo447()" type="button">Purchase</button>
       </section>
       <hr>
     </div>
   </body>
   <!--Currently purchases are disabled, all attempts to purchase anything will lead to the curse removal page-->
 <script type="text/javascript">
-  function addtocart()
+  function taketo447()
   {
-    location.href = "curseremoval";
+    location.href = "https://scp-wiki.wikidot.com/scp-447";
+  }
+  function taketo963()
+  {
+    location.href = "https://scp-wiki.wikidot.com/scp-963";
   }
 </script>
 <footer>

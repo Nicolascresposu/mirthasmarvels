@@ -2,6 +2,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="Autor" content="Nicolás Crespo">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Bootstrap end-->
     <link rel="stylesheet" href="page.css">
     <style>
 body {
@@ -14,30 +18,43 @@ body {
 </style>
   </head>
   <body>
-    <header>
-      <img src="img/logo.jpg" alt="Mirtha's Marvels" style=width:150px;height:150px;>
-    </header>
-    <h1>
-      Madame Mirtha's Marvels
-    </h1>
-    <div class="Listado">
-    <ul>
-      <aside class="side buttons">
-        <h3><a href="index.html">Home</a><h3>
-      <a href="ritualtips.html"><li>Ritual tips</li></a>
-      <a href="full catalogue.html"><li>Full catalogue</li></a>
-      <a href="curse removal.html"><li>Curse disclaimer and removal</li></a>
-      <a href="contact.html"><li>Contact us</li></a>
-      </aside>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <img src="img/logo.jpg" alt="" width="48" height="48" class="d-inline-block align-text-top">
+    <a class="navbar-brand" href="#">Madame Mirtha's Marvels</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="full catalogue.html">Full catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ritualtips.html">Ritual tips</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Legal</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="curse removal.html">Curse disclaimer and removal</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+            <li><a class="nav-link disabled" href="#" tabindex="-1">Free yourself</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
+  </div>
+</nav>
       <hr>
       <h3>The life cursed amulet</h3>
       <section>
       <img src="img/scp963.jpg" alt="The Cursed Amulet" style="width:500px;height:600px;">
       <p>This amulet will give <span style="color:red">eternal life</span> to the first person to wear it, and will erase the consciousness of everyone thereafter, it remains unknown if it's been yet worn <br>
       <b>Price: $2000</b></p>
-      <button onclick="taketo963()" type="button">Purchase</button>
+      <button onclick="taketo963()" type="button" class="btn btn-primary">Purchase</button>
       </section>
       <hr>
       <h3>The slime</h3>
@@ -45,7 +62,7 @@ body {
       <img src="img/scp447.jpg" alt="The slime" style="width:500px;height:600px;">
       <p>The slimy substance contained within the flask will ██████ ███ ██ ███████<span style="color:orange">████████ ███ ███████████ █████</span>███████ ██ █████████ immediately upon making contact with a corpse. Extreme caution is advised.<br>
       <b>Price: $200 per oz</b></p>
-      <button onclick="taketo447()" type="button">Purchase</button>
+      <button onclick="taketo447()" type="button" class="btn btn-primary">Purchase</button>
       </section>
       <hr>
 
